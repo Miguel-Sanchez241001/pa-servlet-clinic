@@ -13,11 +13,8 @@ public class Conexion {
             String usuario = "root";
             String password = "root";
             String url = "jdbc:mysql://localhost:3306/dbhospital?useSSL=false&serverTimezone=UTC";
-
-            // Establecer el Driver de conexión
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(url, usuario, password);
-
             System.out.println("Conectamos");
 
         } catch (Exception e) {
